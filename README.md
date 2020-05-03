@@ -1,6 +1,6 @@
 # eXtensible Markup Language
 
->***Clone the repository: [Click Here](https://github.com/ahnafpie/Working-with-web-data-.xml-in-python3.git)***
+>**Clone the repository: [Click Here](https://github.com/ahnafpie/Working-with-web-data-.xml-in-python3.git)**
 
 
 ### XML Basic Element
@@ -166,7 +166,9 @@ xsi:noNamespaceSchemaLocation="shiporder.xsd">
 # Parsing XML
 
 >**Get Exercise Code with Result: [Click Here](https://github.com/ahnafpie/Working-with-web-data-.xml-in-python3/blob/master/exercise_xml.ipynb)**
+
 >**Get Assignment: [Click Here](https://github.com/ahnafpie/Working-with-web-data-.xml-in-python3/blob/master/Assignment_xml.ipynb)**
+
 >**Get Py3 file: [Click Here](https://github.com/ahnafpie/Working-with-web-data-.xml-in-python3/commit/def54ddc8cc53254074f84fc78790163c83d0ad6)**
 
 Here is a simple application that parses some XML and extracts some data elements
