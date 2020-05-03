@@ -12,7 +12,7 @@
 * **Self Closing Tag**
 
 **Example of the XML element:**
-```
+```xml
 <person>
     <name>Chuck</name>
     <phone type='intl'>
@@ -44,7 +44,7 @@
 
 ### XSD Structure
 
-```
+```xsd
 xs:element
 xs:sequence
 xs:complexType
@@ -52,7 +52,7 @@ xs:complexType
 
 ### XSD Data Types
 
-```
+```xsd
 xs:string
 xs:date
 xs:dateTime
@@ -64,7 +64,7 @@ xs: integer
 
 
 ### **XML: **
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
 <shiporder orderid="889923"
@@ -93,7 +93,7 @@ xsi:noNamespaceSchemaLocation="shiporder.xsd">
 ```
 
 ### **Schema: **
-```
+```xsd
 <?xml version="1.0" encoding="UTF-8" ?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
@@ -147,12 +147,12 @@ xsi:noNamespaceSchemaLocation="shiporder.xsd">
 </xs:schema>
 ```
 >The restriction element indicates that the datatype is derived from a W3C XML Schema namespace datatype. So, the following fragment means that the value of the element or attribute must be a string value:
-```
+```xsd
 <xs:restriction base="xs:string">
 ```
 >The restriction element is more often used to apply restrictions to elements. Look at the following lines from the schema above:
 
-```
+```xsd
 <xs:simpleType name="orderidtype">
   <xs:restriction base="xs:string">
     <xs:pattern value="[0-9]{6}"/>
@@ -174,7 +174,7 @@ xsi:noNamespaceSchemaLocation="shiporder.xsd">
 Here is a simple application that parses some XML and extracts some data elements
 from the XML:
 
-```
+```python3
 import xml.etree.ElementTree as ET
 
 data = '''
@@ -196,7 +196,7 @@ Using an XML parser such as ElementTree has the advantage that while the XML in 
 
 Often the XML has multiple nodes and we need to write a loop to process all of
 the nodes. In the following program, we loop through all of the user nodes:
-```
+```python3
 import xml.etree.ElementTree as ET
 
 
